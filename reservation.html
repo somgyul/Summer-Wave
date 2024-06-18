@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>써머웨이브</title>
+    <link type="text/css" rel="stylesheet" href="wavestyle.css">
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html">Summer Wave</a></h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson.html">Lesson</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+
+    <div class="reservation main">
+        <h2>온라인 예약</h2> <hr>
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="ldate">강습일</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="ldate" name="ldate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="ltime">강습시간</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="ltime" name="ltime">
+                            <option value="7">7시</option>
+                            <option value="9">9시</option>
+                            <option value="11">11시</option>
+                            <option value="13">13시</option>
+                            <option value="15">15시</option>
+                            <option value="17">17시</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">신청자명</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="신청자명을 입력해주세요">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tel">연락처</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" id="tel" name="tel" placeholder="연락처를 입력해주세요">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="예약하기" onclick="alert('예약되었습니다.')">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Summer Wave</strong></p>
+        <p>대표: 홍길동 | 문의: 070-1234-5678 | 이메일: summerwavekr@gmail.com</p>
+        <P>COPYRIGHT 2024 SUMMER WAVE. ALL RIGHTS RESERVED.</P>
+    </div>
+</body>
+</html>
